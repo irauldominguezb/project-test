@@ -5,6 +5,7 @@
       <ul>
         <li><router-link to="/">Inicio</router-link></li>
         <li><router-link to="/about">Acerca de</router-link></li>
+        <h2>Hola, desde vue</h2>
       </ul>
     </nav>
     <router-view/>
