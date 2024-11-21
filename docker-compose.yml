@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   ui-cars:
     container_name: ui-cars
