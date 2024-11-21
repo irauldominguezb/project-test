@@ -6,6 +6,7 @@
         <li><router-link to="/">Inicio</router-link></li>
         <li><router-link to="/about">Acerca de</router-link></li>
         <h2>Hola, desde vue</h2>
+        <h3>Esta es otra prueba</h3>
       </ul>
     </nav>
     <router-view/>
