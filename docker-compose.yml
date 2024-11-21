@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  ui-cars:
+    container_name: ui-cars
+    build:
+      dockerfile: Dockerfile
+      context: './gpds-ui'
+      ports:
+        - "8081:80"
+      networks:
+        - gpds-network
+      depends_on:
+        - api-cars
+  api-cars:
+    container_name: api-cars
+    build:
+      dockerfile: Dockerfile
+      context: './gpds-autos'
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/autos10a
+      SPRING_DATASOURCE_USERNAME: autos
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8082:8080"
+    depends_on:
+      - mysql-db
+  mysql-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: roopassword
+      MYSQL_DATABASE: autos10a
+      MYSQL_USER: autosadmin
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+networks:
+  gpds-network:
+    driver: bridge
