@@ -10,7 +10,7 @@
     </parent>
     <groupId>mx.edu.utez</groupId>
     <artifactId>gpds-autos</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1</version>
     <name>gpds-autos</name>
     <description>gpds-autos</description>
     <url/>
