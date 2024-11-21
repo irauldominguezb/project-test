@@ -5,12 +5,12 @@ services:
     build:
       dockerfile: Dockerfile
       context: './gpds-ui'
-      ports:
-        - "8081:80"
-      networks:
-        - gpds-network
-      depends_on:
-        - api-cars
+    ports:
+      - "8081:80"
+    networks:
+      - gpds-network
+    depends_on:
+      - api-cars
   api-cars:
     container_name: api-cars
     build:
