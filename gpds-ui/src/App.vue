@@ -7,7 +7,7 @@
         <li><router-link to="/about">Acerca de</router-link></li>
         <h2>Hola, desde vue</h2>
         <h3>Esta es otra prueba</h3>
-        <h3>Prueba 30 k</h3>
+        <h3>Prueba 31</h3>
       </ul>
     </nav>
     <router-view/>
