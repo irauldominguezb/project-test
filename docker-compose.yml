@@ -11,7 +11,7 @@ services:
       - api-cars
   api-cars:
     build:
-      context: './gpds-api'
+      context: './gpds-autos'
       dockerfile: Dockerfile
     ports:
       - "8081:8080"
