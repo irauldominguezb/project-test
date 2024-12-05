@@ -8,7 +8,7 @@
         <h2>Hola, desde vue</h2>
         <h3>Esta es otra prueba</h3>
         <h3>Prueba 35</h3>
-        <h4>Prueba 450</h4>
+        <h4>Prueba 451</h4>
       </ul>
     </nav>
     <router-view/>
