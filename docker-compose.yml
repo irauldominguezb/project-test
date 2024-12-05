@@ -1,6 +1,5 @@
 services:
   ui-cars:
-    container_name: ui-cars
     build:
       dockerfile: Dockerfile
       context: './gpds-ui'
@@ -10,7 +9,6 @@ services:
       - gpds-network
 
   api-cars:
-    container_name: api-cars
     build:
       dockerfile: Dockerfile
       context: './gpds-autos'
